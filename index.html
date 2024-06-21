@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess My Number🎲</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- <script src="https://kit.fontawesome.com/e974a49d78.js" crossorigin="anonymous"></script> -->
   </head>
   <body>
     <div class="main-panel">
       <header>
-        <p>Between 1 and 20</p>
-        <button>Again</button>
+        <p class="between">Between 1 and 20</p>
+        <button class="btn again">Again</button>
         <h1>Guess My Number</h1>
+        <div class="number">?</div>
       </header>
       <main>
         <section class="left">
-          <input type="number" />
-          <button>Check</button>
+          <input type="number" class="guessed-number" />
+          <button class="btn check">Check</button>
         </section>
         <section class="right">
-          <p>Start guessing...</p>
-          <p>Score:<span>20</span></p>
-          <p>Highscore:<span>0</span></p>
+          <p class="message">Start guessing...</p>
+          <p class="score-label">Score:<span class="score">20</span></p>
+          <p class="highscore-label">
+            Highscore:<span class="highscore">0</span>
+          </p>
         </section>
       </main>
     </div>
