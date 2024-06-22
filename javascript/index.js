@@ -28,6 +28,8 @@ document.querySelector(".check").addEventListener("click", function () {
       score--;
       document.querySelector(".score").textContent = score;
     } else if (guessedNumber === randomNumber) {
+      document.querySelector(".main-panel").style.backgroundColor = "#60b347";
+      document.querySelector(".number").style.width = "30rem";
       document.querySelector(".number").textContent = randomNumber;
       document.querySelector(".message").textContent =
         "🎉 You've got it right!";
